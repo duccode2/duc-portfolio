@@ -1,0 +1,6 @@
+Deploy root: C:\Users\ADMIN\Downloads\portfolio-site_1\portfolio-site-deploy
+Scanned files: 17
+Checked references: 80
+Missing references: 0
+
+No missing local referenced files found.

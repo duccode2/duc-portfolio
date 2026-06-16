@@ -1,0 +1,39 @@
+{
+  "missing_slider_slots": [
+    {
+      "page": "kalite-product-communication-may-ep-cham.html",
+      "missing_slots": [
+        "Anh 04",
+        "Anh 05"
+      ],
+      "count": 2
+    },
+    {
+      "page": "kalite-campaign-tet-khong-dau-thi-se-giau.html",
+      "missing_slots": [
+        "Anh 04",
+        "Anh 05"
+      ],
+      "count": 2
+    },
+    {
+      "page": "lotteria-series-chau-giang-ne.html",
+      "missing_slots": [
+        "Anh 03",
+        "Anh 04",
+        "Anh 05"
+      ],
+      "count": 3
+    },
+    {
+      "page": "ukg-brand-film-fly-together.html",
+      "missing_slots": [
+        "Anh 03",
+        "Anh 04",
+        "Anh 05"
+      ],
+      "count": 3
+    }
+  ],
+  "case_pages_without_slider_config": []
+}
