@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nguyen Dinh Duc Resume</title>
+  <meta name="description" content="Resume of Nguyen Dinh Duc in English and Vietnamese.">
+  <style>
+    :root {
+      --bg: #11100d;
+      --panel: #1a1814;
+      --paper: #f7f1e8;
+      --text: #fffaf2;
+      --muted: rgba(255, 250, 242, .68);
+      --line: rgba(255, 250, 242, .14);
+      --accent: #f47b3c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(244, 123, 60, .18), transparent 34rem),
+        linear-gradient(135deg, #100f0c 0%, #1a1510 55%, #0d0c0a 100%);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px clamp(18px, 4vw, 48px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(17, 16, 13, .88);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: grid;
+      gap: 4px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 42px);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 11px 15px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 250, 242, .08);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(244, 123, 60, .72);
+      background: rgba(244, 123, 60, .16);
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 56px;
+    }
+
+    .intro {
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: clamp(14px, 2vw, 16px);
+      line-height: 1.7;
+    }
+
+    .resume-block {
+      margin-top: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(244, 123, 60, .28);
+      border-radius: 24px;
+      background: rgba(255, 250, 242, .06);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .28);
+    }
+
+    .resume-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 20px clamp(18px, 3vw, 28px);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(244, 123, 60, .16), rgba(255, 250, 242, .04));
+    }
+
+    .resume-head h2 {
+      font-size: clamp(22px, 3vw, 34px);
+    }
+
+    .resume-head span {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .viewer {
+      height: min(92vh, 980px);
+      min-height: 620px;
+      background: var(--paper);
+    }
+
+    .viewer iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: var(--paper);
+    }
+
+    .mobile-fallback {
+      display: none;
+      padding: 18px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 760px) {
+      .topbar,
+      .resume-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .actions {
+        justify-content: flex-start;
+      }
+
+      .viewer {
+        height: 76vh;
+        min-height: 520px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="eyebrow">Resume</div>
+      <h1>Nguyen Dinh Duc</h1>
+    </div>
+    <nav class="actions" aria-label="Resume actions">
+      <a class="btn" href="index.html">Back to Portfolio</a>
+      <a class="btn" href="assets/NguyenDinhDuc_CV_EN.pdf" download>Download EN</a>
+      <a class="btn" href="assets/NguyenDinhDuc_CV_VI.pdf" download>Download VI</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="intro">
+      English resume is placed first for recruiters and international roles. The Vietnamese version is below for local hiring teams and quick reference.
+    </p>
+
+    <section class="resume-block" aria-labelledby="resume-en-title">
+      <div class="resume-head">
+        <h2 id="resume-en-title">English <span>CV</span></h2>
+        <a class="btn" href="assets/NguyenDinhDuc_CV_EN.pdf" target="_blank" rel="noopener">Open PDF</a>
+      </div>
+      <div class="viewer">
+        <iframe src="assets/NguyenDinhDuc_CV_EN.pdf" title="Nguyen Dinh Duc English CV"></iframe>
+      </div>
+      <p class="mobile-fallback">If the PDF preview does not appear on your device, use the Open PDF or Download EN button.</p>
+    </section>
+
+    <section class="resume-block" aria-labelledby="resume-vi-title">
+      <div class="resume-head">
+        <h2 id="resume-vi-title">Vietnamese <span>CV</span></h2>
+        <a class="btn" href="assets/NguyenDinhDuc_CV_VI.pdf" target="_blank" rel="noopener">Open PDF</a>
+      </div>
+      <div class="viewer">
+        <iframe src="assets/NguyenDinhDuc_CV_VI.pdf" title="Nguyen Dinh Duc Vietnamese CV"></iframe>
+      </div>
+      <p class="mobile-fallback">If the PDF preview does not appear on your device, use the Open PDF or Download VI button.</p>
+    </section>
+  </main>
+</body>
+</html>
